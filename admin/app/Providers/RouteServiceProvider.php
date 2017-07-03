@@ -35,7 +35,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map()
     {
-        Route::get('/', 'App\\Http\\Controllers\\HomeController@index');
+        Route::get('/', 'App\\Http\\Controllers\\AdminController@index');
         foreach (glob(web_path('routes') . '/*.php') as $file) {
             $route_file = basename($file, '.php');
             $this->mapRoutes($route_file);
