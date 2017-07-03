@@ -62,7 +62,7 @@
 <!--/_footer 作为公共模版分离出去-->
 
 <!--请在下方写此页面业务相关的脚本-->
-<script type="text/javascript" src="lib/jquery.contextmenu/jquery.contextmenu.r2.js"></script>
+<script type="text/javascript" src="{{ resource_path('assets/plugins/H-ui.admin/lib/jquery.contextmenu/jquery.contextmenu.r2.js') }}"></script>
 <script type="text/javascript">
     /*个人信息*/
     function myselfinfo(){
