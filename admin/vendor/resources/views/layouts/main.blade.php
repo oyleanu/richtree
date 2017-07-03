@@ -26,10 +26,10 @@
 </head>
 <body>
 <header class="navbar-wrapper">
-    @include('header')
+    @include('layouts.header')
 </header>
 <aside class="Hui-aside">
-    @include('sidebar')
+    @include('layouts.sidebar')
 </aside>
 <div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>
 <section class="Hui-article-box">
@@ -58,7 +58,7 @@
     </ul>
 </div>
 <!--_footer 作为公共模版分离出去-->
-@include('footer')
+@include('layouts.footer')
 <!--/_footer 作为公共模版分离出去-->
 
 <!--请在下方写此页面业务相关的脚本-->
