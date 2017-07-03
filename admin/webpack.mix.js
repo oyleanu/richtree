@@ -17,7 +17,10 @@ mix.combine([
     'vendor/resources/assets/plugins/H-ui.admin/static/h-ui.admin/skin/default/skin.css',
     'vendor/resources/assets/plugins/H-ui.admin/static/h-ui.admin/css/style.css'], 'public/css/H-ui.css');
 
-mix.js('vendor/resources/assets/js/app.js', 'public/js')
-   .sass('vendor/resources/assets/sass/app.scss', 'public/css');
+mix.combine([
+    'vendor/resources/assets/plugins/H-ui.admin/lib/jquery/1.9.1/jquery.min.js',
+    'vendor/resources/assets/plugins/H-ui.admin/lib/layer/2.4/layer.js',
+    'vendor/resources/assets/plugins/H-ui.admin/static/h-ui/js/H-ui.min.js',
+    'vendor/resources/assets/plugins/H-ui.admin/static/h-ui.admin/js/H-ui.admin.js',], 'public/js/H-ui-footer.js');
 
 

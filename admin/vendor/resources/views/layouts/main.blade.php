@@ -58,7 +58,7 @@
     </ul>
 </div>
 <!--_footer 作为公共模版分离出去-->
-@include('layouts.footer')
+<script type="text/javascript" src="{{ mix('js/H-ui-footer.js') }}"></script>
 <!--/_footer 作为公共模版分离出去-->
 
 <!--请在下方写此页面业务相关的脚本-->
