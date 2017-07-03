@@ -1,0 +1,14 @@
+/framework
+/*/node_modules
+/*/public/hot
+/*/public/storage
+/*/vendor/storage/*
+/*/vendor/config/database.php
+/*/vendor/config/cache.php
+/*/vendor/config/session.php
+/.idea
+/.vagrant
+Homestead.json
+Homestead.yaml
+npm-debug.log
+.env
