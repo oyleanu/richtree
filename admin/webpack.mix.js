@@ -28,5 +28,5 @@ mix.combine([
     'vendor/resources/assets/plugins/H-ui.admin/lib/html5shiv.js',
     'vendor/resources/assets/plugins/H-ui.admin/lib/respond.min.jss'], 'public/js/H-ui-ie9.js');
 
-mix.sass('vendor/resources/assets/plugins/bootstrap/_navbar.scss', 'public/css/bootstrap_navbar.css');
-mix.js('vendor/resources/assets/plugins/H-ui.admin/lib/DD_belatedPNG_0.0.8a-min.js', 'public/js/H-ui-ie6.js');
+mix.js('vendor/resources/assets/plugins/H-ui.admin/lib/DD_belatedPNG_0.0.8a-min.js', 'public/js/H-ui-ie6.js')
+    .css('vendor/resources/assets/plugins/bootstrap/navbar.css', 'public/css/bootstrap_navbar.css');
