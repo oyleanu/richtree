@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -12,13 +12,12 @@
     <link rel="Bookmark" href="/favicon.ico" >
     <link rel="Shortcut Icon" href="/favicon.ico" />
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="{{ resource_path('assets/plugins/H-ui.admin/lib/html5shiv.js') }}"></script>
-    <script type="text/javascript" src="{{ resource_path('assets/plugins/H-ui.admin/lib/respond.min.jss') }}"></script>
+    <script type="text/javascript" src="{{ mix('js/H-ui-ie9.js') }}"></script>
     <![endif]-->
     <link href="{{ mix('css/H-ui.css') }}" rel="stylesheet">
 
     <!--[if IE 6]>
-    <script type="text/javascript" src="{{ resource_path('assets/plugins/H-ui.admin/lib/DD_belatedPNG_0.0.8a-min.js') }}" ></script>
+    <script type="text/javascript" src="{{ mix('js/H-ui-ie6.js') }}" ></script>
     <script>DD_belatedPNG.fix('*');</script>
     <![endif]-->
 
@@ -62,7 +61,6 @@
 <!--/_footer 作为公共模版分离出去-->
 
 <!--请在下方写此页面业务相关的脚本-->
-<script type="text/javascript" src="{{ resource_path('assets/plugins/H-ui.admin/lib/jquery.contextmenu/jquery.contextmenu.r2.js') }}"></script>
 <script type="text/javascript">
     /*个人信息*/
     function myselfinfo(){

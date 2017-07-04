@@ -21,6 +21,12 @@ mix.combine([
     'vendor/resources/assets/plugins/H-ui.admin/lib/jquery/1.9.1/jquery.min.js',
     'vendor/resources/assets/plugins/H-ui.admin/lib/layer/2.4/layer.js',
     'vendor/resources/assets/plugins/H-ui.admin/static/h-ui/js/H-ui.min.js',
-    'vendor/resources/assets/plugins/H-ui.admin/static/h-ui.admin/js/H-ui.admin.js',], 'public/js/H-ui-footer.js');
+    'vendor/resources/assets/plugins/H-ui.admin/static/h-ui.admin/js/H-ui.admin.js',
+    'vendor/resources/assets/plugins/H-ui.admin/lib/jquery.contextmenu/jquery.contextmenu.r2.js'], 'public/js/H-ui-footer.js');
+
+mix.combine([
+    'vendor/resources/assets/plugins/H-ui.admin/lib/html5shiv.js',
+    'vendor/resources/assets/plugins/H-ui.admin/lib/respond.min.jss'], 'public/js/H-ui-ie9.js');
 
 
+mix.js('vendor/resources/assets/plugins/H-ui.admin/lib/DD_belatedPNG_0.0.8a-min.js', 'public/js/H-ui-ie6.js');
