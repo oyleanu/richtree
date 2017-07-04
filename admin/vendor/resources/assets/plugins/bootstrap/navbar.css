@@ -4,7 +4,6 @@
     min-height: 50px;
     margin-bottom: 22px;
     border: 1px solid transparent;
-    background-color: #404040;
     color: #9d9ea2;
 }
 
@@ -356,8 +355,15 @@
     }
 }
 
+@media (min-width: 1900px) {
+    .container {
+      width: 1860px;
+    }
+}
+
+
 .navbar-default {
-    background-color: #fff;
+    background-color: #404040;
     border-color: #d3e0e9
 }
 
