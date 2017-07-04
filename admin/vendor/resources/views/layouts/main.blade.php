@@ -15,7 +15,7 @@
     <script type="text/javascript" src="{{ mix('js/H-ui-ie9.js') }}"></script>
     <![endif]-->
     <link href="{{ mix('css/H-ui.css') }}" rel="stylesheet">
-    <link href="{{ mix('css/bootstrap_navbar.css') }}" rel="stylesheet">
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
     <!--[if IE 6]>
     <script type="text/javascript" src="{{ mix('js/H-ui-ie6.js') }}" ></script>
