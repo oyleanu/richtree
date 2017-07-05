@@ -388,7 +388,7 @@
 }
 
 .navbar-default .navbar-brand {
-    color: #777
+    color: #ffffff;
 }
 
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
@@ -397,7 +397,7 @@
 }
 
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-text {
-    color: #777
+    color: #ffffff;
 }
 
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
@@ -458,7 +458,7 @@
 }
 
 .navbar-default .navbar-link {
-    color: #777
+    color: #ffffff;
 }
 
 .navbar-default .navbar-link:hover {
@@ -466,7 +466,7 @@
 }
 
 .navbar-default .btn-link {
-    color: #777
+    color: #ffffff;
 }
 
 .navbar-default .btn-link:focus, .navbar-default .btn-link:hover {
