@@ -11,7 +11,8 @@ const { mix } = require('laravel-mix');
  |
  */
 mix.js('vendor/resources/assets/js/app.js', 'public/js')
-    .sass('vendor/resources/assets/sass/app.scss', 'public/css');
+    .sass('vendor/resources/assets/sass/app.scss', 'public/css')
+    .extract(['jquery']);;
 
 mix.styles(['vendor/resources/assets/plugins/H-ui.admin/static/h-ui.admin/css/H-ui.admin.css'], 'public/css/H-ui.css');
 
