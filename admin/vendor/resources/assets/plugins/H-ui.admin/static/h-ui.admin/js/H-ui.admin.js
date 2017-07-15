@@ -7,6 +7,54 @@
 * Licensed under MIT license.
 * http://opensource.org/licenses/MIT
 */
+!function($) {
+	$.fn.Huifold = function(options){
+		var defaults = {
+			titCell:'.item .Huifold-header',
+			mainCell:'.item .Huifold-body',
+			type:1,//1	只打开一个，可以全部关闭;2	必须有一个打开;3	可打开多个
+			trigger:'click',
+			className:"selected",
+			speed:'first',
+		}
+		var options = $.extend(defaults, options);
+		this.each(function(){
+			var that = $(this);
+			that.find(options.titCell).on(options.trigger,function(){
+				if ($(this).next().is(":visible")) {
+					if (options.type == 2) {
+						return false;
+					} else {
+						$(this).next().slideUp(options.speed).end().removeClass(options.className);
+						if ($(this).find("b")) {
+							$(this).find("b").html("+");
+						}
+					}
+				}else {
+					if (options.type == 3) {
+						$(this).next().slideDown(options.speed).end().addClass(options.className);
+						if ($(this).find("b")) {
+							$(this).find("b").html("-");
+						}
+					} else {
+						that.find(options.mainCell).slideUp(options.speed);
+						that.find(options.titCell).removeClass(options.className);
+						if (that.find(options.titCell).find("b")) {
+							that.find(options.titCell).find("b").html("+");
+						}
+						$(this).next().slideDown(options.speed).end().addClass(options.className);
+						if ($(this).find("b")) {
+							$(this).find("b").html("-");
+						}
+					}
+				}
+			});
+
+		});
+	}
+} (window.jQuery);
+
+
 var num=0,oUl=$("#min_title_list"),hide_nav=$("#Hui-tabNav");
 
 /*获取顶部选项卡总长度*/
