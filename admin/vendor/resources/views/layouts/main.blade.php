@@ -11,16 +11,10 @@
 
     <link rel="Bookmark" href="/favicon.ico" >
     <link rel="Shortcut Icon" href="/favicon.ico" />
-    <!--[if lt IE 9]>
-    <script type="text/javascript" src="{{ mix('js/H-ui-ie9.js') }}"></script>
-    <![endif]-->
-    <link href="{{ mix('css/H-ui.css') }}" rel="stylesheet">
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
-    <!--[if IE 6]>
-    <script type="text/javascript" src="{{ mix('js/H-ui-ie6.js') }}" ></script>
-    <script>DD_belatedPNG.fix('*');</script>
-    <![endif]-->
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    <link href="{{ mix('css/H-ui.css') }}" rel="stylesheet">
+
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 </head>
@@ -58,55 +52,13 @@
     </ul>
 </div>
 <!--_footer 作为公共模版分离出去-->
-<script type="text/javascript" src="{{ mix('js/H-ui-footer.js') }}"></script>
+<script src="{{ asset('js/app.js') }}"></script>
+<script type="text/javascript" src="{{ mix('js/H-ui.admin.js') }}"></script>
 <!--/_footer 作为公共模版分离出去-->
 
 <!--请在下方写此页面业务相关的脚本-->
 <script type="text/javascript">
-    /*个人信息*/
-    function myselfinfo(){
-        layer.open({
-            type: 1,
-            area: ['300px','200px'],
-            fix: false, //不固定
-            maxmin: true,
-            shade:0.4,
-            title: '查看信息',
-            content: '<div>管理员信息</div>'
-        });
-    }
 
-    /*资讯-添加*/
-    function article_add(title,url){
-        var index = layer.open({
-            type: 2,
-            title: title,
-            content: url
-        });
-        layer.full(index);
-    }
-    /*图片-添加*/
-    function picture_add(title,url){
-        var index = layer.open({
-            type: 2,
-            title: title,
-            content: url
-        });
-        layer.full(index);
-    }
-    /*产品-添加*/
-    function product_add(title,url){
-        var index = layer.open({
-            type: 2,
-            title: title,
-            content: url
-        });
-        layer.full(index);
-    }
-    /*用户-添加*/
-    function member_add(title,url,w,h){
-        layer_show(title,url,w,h);
-    }
 
 
 </script>
