@@ -12,8 +12,7 @@
     <link rel="Bookmark" href="/favicon.ico" >
     <link rel="Shortcut Icon" href="/favicon.ico" />
 
-    <script type="text/javascript" src="/js/manifest.js"></script>
-    <script type="text/javascript" src="/js/vendor.js"></script>
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
 
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <link href="{{ mix('css/H-ui.css') }}" rel="stylesheet">

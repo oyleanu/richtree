@@ -10,9 +10,9 @@ const { mix } = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
+mix.js('vendor/resources/assets/plugins/H-ui.admin/lib/jquery/1.9.1/jquery.min.js','public/js/jquery.min.js')
 mix.js('vendor/resources/assets/js/app.js', 'public/js')
-    .sass('vendor/resources/assets/sass/app.scss', 'public/css')
-    .extract(['jquery']);;
+    .sass('vendor/resources/assets/sass/app.scss', 'public/css');
 
 mix.styles(['vendor/resources/assets/plugins/H-ui.admin/static/h-ui.admin/css/H-ui.admin.css'], 'public/css/H-ui.css');
 
