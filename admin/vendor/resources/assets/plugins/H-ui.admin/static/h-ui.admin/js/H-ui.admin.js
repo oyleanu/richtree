@@ -54,6 +54,16 @@
 	}
 } (window.jQuery);
 
+function displaynavbar(obj){
+	if($(obj).hasClass("open")){
+		$(obj).removeClass("open");
+		$("body").removeClass("big-page");
+	} else {
+		$(obj).addClass("open");
+		$("body").addClass("big-page");
+	}
+}
+
 var num=0,oUl=$("#min_title_list"),hide_nav=$("#Hui-tabNav");
 
 /*获取顶部选项卡总长度*/
@@ -175,7 +185,7 @@ function creatIframe(href,titleName){
 	iframeBox.hide();
 	iframe_box.append('<div class="show_iframe"><div class="loading"></div><iframe frameborder="0" src='+href+'></iframe></div>');
 	var showBox=iframe_box.find('.show_iframe:visible');
-	showBox.find('iframe').load(function(){
+	showBox.find('iframe').on('load',function(){
 		showBox.find('.loading').hide();
 	});
 }
